@@ -34,4 +34,5 @@ Thumbs.db
 # Large files
 *.zip
 *.tar.gz
-*.rar
+*.rarryno-v2-scripts/my_project_key.json
+backup/chat2.py
