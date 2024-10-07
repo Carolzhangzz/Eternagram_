@@ -1,0 +1,117 @@
+.mask {
+  position: fixed;
+  background: #fafafa;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  user-select: none;
+}
+.mask.close {
+  opacity: 0;
+  display: none;
+}
+/* .mask.show {
+  opacity: 1;
+} */
+.mask .tips {
+  width: 80vw;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #fefefe;
+  border-radius: 5px;
+  border: solid 1px #e2e2e2;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 3.5em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.041);
+  line-height: 3.3em;
+  transform: translateY(-2vh);
+}
+.mask .tips b {
+  color: var(--main--color);
+  cursor: pointer;
+  margin-left: 0.3em;
+}
+.mask .tips b:hover{
+  opacity: 0.8;
+}
+
+.mask .popup {
+  max-width: 80vw;
+  margin: 0 auto;
+  background-color: #fefefe;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.041);
+  border: solid 1px #e2e2e2;
+  transform: translateY(-2vh);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.mask .popup-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.mask .popup-header img {
+  width: 100%;
+}
+.mask .popup-content {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 2em;
+}
+.mask .popup-content input {
+  width: 100%;
+  height: 3em;
+  border: solid 1px #d1dbe3;
+  outline: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  padding: 0 1em;
+  margin-top: 1em;
+}
+.mask p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+}
+.mask .popup-footer {
+  padding: 0.5em 2em 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.mask .popup-footer .confirm {
+  background-color: var(--main--color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 3em;
+  padding: 0 2em;
+  border-radius: 5px;
+  user-select: none;
+  width: 100%;
+  font-weight: bold;
+}
+.mask .popup-footer .confirm:active {
+  background-color: var(--main--color);
+  opacity: 0.8;
+}
+@media screen and (min-width: 800px) {
+  .mask .tips,
+  .mask .popup {
+    max-width: 350px;
+  }
+}
