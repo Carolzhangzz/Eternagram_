@@ -86,7 +86,6 @@ Can AI Prompt Humans? Multimodal Agents Prompt Players' Game Actions and Show Co
 ```
 
 
-
 ## Acknowledgments
 
-- Thanks to all contributors and participants in the CHI Conference 2024.
+- Thanks to all contributors. 
